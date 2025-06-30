@@ -201,8 +201,8 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Nama</th>
+                                <th>No. KTP</th>
                                 <th>Kode Konsumen</th>
-                                <th>No. KTP</th>                                                                
                                 <th>Alamat</th>
                                 <th>No. HP</th>
                             </tr>
@@ -305,8 +305,8 @@
             showModal(employee.position || employee.kode, employee.name); // Matching employee.position with datafaktur.KODE
         })
 ),
-                    $('<td>').text(employee.position),
                     $('<td>').html(`<span class="${deptClass}">${employee.department}</span>`),
+                    $('<td>').text(employee.position),
                     $('<td>').html(`<span class="text-success">${employee.salary}</span>`),
                     $('<td>').html(`<span class="${statusClass}">${statusText}</span>`)
                 );
